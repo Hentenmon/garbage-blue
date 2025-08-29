@@ -155,19 +155,3 @@ _Route9SignText::
 	line "CERULEAN CITY-"
 	cont "ROCK TUNNEL"
 	done
-
-_Route9SurgeHubbyText::
-    text "Hi, could I ask"
-	line "for a favor?"
-
-	para "My hubby SURGE"
-	line "is feeling"
-	cont "kinda down right"
-	cont "now."
-
-	para "Can you go and"
-	line "battle him,"
-    cont "please?"
-	cont "It always"
-	cont "cheers him up."
-	done
