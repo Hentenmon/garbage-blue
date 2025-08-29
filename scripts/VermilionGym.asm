@@ -87,9 +87,7 @@ VermilionGymLTSurgeReceiveTM24Script:
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_VERMILION_GYM_TRAINER_0, EVENT_BEAT_VERMILION_GYM_TRAINER_2
-    ld a, HS_ROUTE9_SURGE_HUBBY
-	ld [wMissableObjectIndex], a
-	predef HideObject
+
 	jp VermilionGymResetScripts
 
 VermilionGym_TextPointers:
