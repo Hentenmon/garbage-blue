@@ -25,6 +25,7 @@ Route9_TextPointers:
 	dw_const Route9Hiker3Text,        TEXT_ROUTE9_HIKER3
 	dw_const Route9Youngster2Text,    TEXT_ROUTE9_YOUNGSTER2
 	dw_const PickUpItemText,          TEXT_ROUTE9_TM_TELEPORT
+    dw_const Route9SurgeHubbyText,    TEXT_ROUTE9_SURGE_HUBBY
 	dw_const Route9SignText,          TEXT_ROUTE9_SIGN
 
 Route9TrainerHeaders:
@@ -203,6 +204,11 @@ Route9Youngster2EndBattleText:
 Route9Youngster2AfterBattleText:
 	text_far _Route9Youngster2AfterBattleText
 	text_end
+
+Route9SurgeHubbyText:
+	text_far _Route9SurgeHubbyText
+	text_end
+
 
 Route9SignText:
 	text_far _Route9SignText
