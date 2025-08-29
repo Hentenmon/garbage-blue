@@ -84,6 +84,9 @@ VermilionGymLTSurgeReceiveTM24Script:
 	set BIT_THUNDERBADGE, [hl]
 	ld hl, wBeatGymFlags
 	set BIT_THUNDERBADGE, [hl]
+    ld a, HS_ROUTE9_SURGE_HUBBY
+	ld [wMissableObjectIndex], a
+	predef HideObject
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_VERMILION_GYM_TRAINER_0, EVENT_BEAT_VERMILION_GYM_TRAINER_2
