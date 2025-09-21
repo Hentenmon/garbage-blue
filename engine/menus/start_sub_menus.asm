@@ -121,7 +121,6 @@ StartMenu_Pokemon::
 	jp hl
 .outOfBattleMovePointers
 	dw .cut
-	dw .fly
 	dw .surf
 	dw .surf
 	dw .strength
@@ -129,26 +128,6 @@ StartMenu_Pokemon::
 	dw .dig
 	dw .teleport
 	dw .softboiled
-.fly
-	bit BIT_THUNDERBADGE, a
-	jp z, .newBadgeRequired
-	call CheckIfInOutsideMap
-	jr z, .canFly
-	ld a, [wWhichPokemon]
-	ld hl, wPartyMonNicks
-	call GetPartyMonName
-	ld hl, .cannotFlyHereText
-	call PrintText
-	jp .loop
-.canFly
-	call ChooseFlyDestination
-	ld a, [wStatusFlags6]
-	bit BIT_FLY_WARP, a
-	jp nz, .goBackToMap
-	call LoadFontTilePatterns
-	ld hl, wStatusFlags4
-	set BIT_UNKNOWN_4_1, [hl]
-	jp StartMenu_Pokemon
 .cut
 	bit BIT_CASCADEBADGE, a
 	jp z, .newBadgeRequired

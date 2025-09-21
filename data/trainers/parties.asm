@@ -203,7 +203,7 @@ JrTrainerFData:
 
 PokemaniacData:
 ; Route 10
-	db 30, RHYHORN, LICKITUNG, 0
+	db 20, RHYHORN, LICKITUNG, 0
 	db 20, CUBONE, SLOWPOKE, 0
 ; Rock Tunnel B1F
 	db 20, SLOWPOKE, SLOWPOKE, SLOWPOKE, 0
@@ -330,6 +330,8 @@ FisherData:
 	db 33, SEAKING, GOLDEEN, 0
 ; Route 12
 	db 24, MAGIKARP, MAGIKARP, 0
+; Cerulean Cave
+    db 65, MAGIKARP, 0
 
 SwimmerData:
 ; Cerulean Gym

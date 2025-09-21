@@ -28,19 +28,19 @@ _OaksLabThoseArePokeBallsText::
 _OaksLabYouWantCharmanderText::
 	text "So! You want the"
 	line "fire #MON,"
-	cont "CHARMANDER?"
+	cont "VULPIX?"
 	done
 
 _OaksLabYouWantSquirtleText::
 	text "So! You want the"
 	line "water #MON,"
-	cont "SQUIRTLE?"
+	cont "GOLDEEN?"
 	done
 
 _OaksLabYouWantBulbasaurText::
 	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	line "grass #MON,"
+	cont "PARAS?"
 	done
 
 _OaksLabMonEnergeticText::
@@ -136,8 +136,8 @@ _OaksLabGivePokeballsExplanationText::
 	cont "it's fair game."
 
 	para "Just throw a #"
-	line "BALL at it and try"
-	line "to catch it!"
+	line "BALL at it and"
+	line "try to catch it!"
 
 	para "This won't always"
 	line "work, though."

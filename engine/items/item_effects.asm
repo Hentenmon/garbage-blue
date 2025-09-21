@@ -76,7 +76,7 @@ ItemUsePtrTable:
 	dw ItemUseMaxRepel   ; MAX_REPEL
 	dw ItemUseDireHit    ; DIRE_HIT
 	dw UnusableItem      ; COIN
-	dw ItemUseMedicine   ; FRESH_WATER
+	dw UnusableItem      ; FRESH_WATER
 	dw ItemUseMedicine   ; SODA_POP
 	dw ItemUseMedicine   ; LEMONADE
 	dw UnusableItem      ; S_S_TICKET
@@ -1079,8 +1079,6 @@ ItemUseMedicine:
 	jr z, .addHealAmount
 	ld b, 80 ; Lemonade heal amount
 	jr nc, .addHealAmount
-	cp FRESH_WATER
-	ld b, 50 ; Fresh Water heal amount
 	jr z, .addHealAmount
 	cp SUPER_POTION
 	ld b, 200 ; Hyper Potion heal amount

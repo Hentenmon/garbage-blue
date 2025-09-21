@@ -263,7 +263,7 @@ SpearowEvosMoves:
 
 VoltorbEvosMoves:
 ; Evolutions
-    db EVOLVE_LEVEL, 55, ELECTRODE
+    db EVOLVE_LEVEL, 45, ELECTRODE
 	db 0
 ; Learnset
 	db 17, SONICBOOM
@@ -340,6 +340,7 @@ ExeggcuteEvosMoves:
 
 GrimerEvosMoves:
 ; Evolutions
+    db EVOLVE_LEVEL, 42, MUK
 	db 0
 ; Learnset
 	db 30, POISON_GAS
@@ -711,6 +712,7 @@ ParasectEvosMoves:
 
 PsyduckEvosMoves:
 ; Evolutions
+    db EVOLVE_LEVEL, 55, GOLDUCK
 	db 0
 ; Learnset
 	db 28, TAIL_WHIP
@@ -1343,14 +1345,14 @@ PoliwrathEvosMoves:
 
 WeedleEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 12, KAKUNA
+	db EVOLVE_LEVEL, 7, KAKUNA
 	db 0
 ; Learnset
 	db 0
 
 KakunaEvosMoves:
 ; Evolutions
-    db EVOLVE_LEVEL, 21, BEEDRILL
+    db EVOLVE_LEVEL, 12, BEEDRILL
 	db 0
 ; Learnset
 	db 0
@@ -1716,7 +1718,7 @@ StarmieEvosMoves:
 
 BulbasaurEvosMoves:
 ; Evolutions
-    db EVOLVE_LEVEL, 52, IVYSAUR
+    db EVOLVE_LEVEL, 34, IVYSAUR
 	db 0
 ; Learnset
 	db 7, LEECH_SEED
@@ -1944,7 +1946,7 @@ MissingNoAFEvosMoves:
 
 CharmanderEvosMoves:
 ; Evolutions
-    db EVOLVE_LEVEL, 37, CHARMELEON
+    db EVOLVE_LEVEL, 26, CHARMELEON
 	db 0
 ; Learnset
 	db 9, EMBER

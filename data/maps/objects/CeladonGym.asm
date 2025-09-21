@@ -12,13 +12,13 @@ CeladonGym_Object:
 	db $3 ; border block
 
 	def_warp_events
-	warp_event  4, 17, LAST_MAP, 7
-	warp_event  5, 17, LAST_MAP, 7
+	warp_event  4, 16, LAST_MAP, 7
+	warp_event  0, 17, LAST_MAP, 7
 
 	def_bg_events
 
 	def_object_events
-	object_event  0,  3, SPRITE_SILPH_WORKER_F, STAY, DOWN, TEXT_CELADONGYM_ERIKA, OPP_ERIKA, 1
+	object_event  1,  3, SPRITE_SILPH_WORKER_F, STAY, DOWN, TEXT_CELADONGYM_ERIKA, OPP_ERIKA, 1
 	object_event  4, 13, SPRITE_COOLTRAINER_F, STAY, RIGHT, TEXT_CELADONGYM_COOLTRAINER_F1, OPP_LASS, 17
 	object_event  6, 16, SPRITE_BEAUTY, STAY, LEFT, TEXT_CELADONGYM_BEAUTY1, OPP_BEAUTY, 1
 	object_event  8,  8, SPRITE_COOLTRAINER_F, STAY, DOWN, TEXT_CELADONGYM_COOLTRAINER_F2, OPP_JR_TRAINER_F, 11

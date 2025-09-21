@@ -1,3 +1,3 @@
 GuardDrinksList:
-	db FRESH_WATER
+	db POKE_DOLL
 	db 0 ; end

@@ -35,7 +35,7 @@ CeladonMart5FClerk2Text::
 	script_mart TM_METRONOME, TM_RAGE, TM_PAY_DAY, TM_SWIFT
 
 FuchsiaMartClerkText::
-	script_mart ULTRA_BALL, GREAT_BALL, SUPER_REPEL, RARE_CANDY
+	script_mart ULTRA_BALL, GREAT_BALL, SUPER_REPEL, RARE_CANDY, POKE_DOLL
 
 UnusedMartClerkText:: ; unreferenced
 	script_mart GREAT_BALL, HYPER_POTION, SUPER_POTION, FULL_HEAL, REVIVE
@@ -47,4 +47,4 @@ SaffronMartClerkText::
 	script_mart ULTRA_BALL, GREAT_BALL, MAX_REPEL, RARE_CANDY
 
 IndigoPlateauLobbyClerkText::
-	script_mart ULTRA_BALL, GREAT_BALL, MAX_REPEL, RARE_CANDY
+	script_mart ULTRA_BALL, GREAT_BALL, MAX_REPEL, RARE_CANDY, FULL_RESTORE

@@ -36,7 +36,7 @@ Route6TrainerHeader3:
 Route6TrainerHeader4:
 	trainer EVENT_BEAT_ROUTE_6_TRAINER_4, 3, Route6CooltrainerF2BattleText, Route6CooltrainerF2EndBattleText, Route6CooltrainerF2AfterBattleText
 Route6TrainerHeader5:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_5, 3, Route6Youngster2BattleText, Route6Youngster2EndBattleText, Route6Youngster2AfterBattleText
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_5, 4, Route6Youngster2BattleText, Route6Youngster2EndBattleText, Route6Youngster2AfterBattleText
 	db -1 ; end
 
 Route6CooltrainerM1Text:

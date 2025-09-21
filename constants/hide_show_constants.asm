@@ -38,10 +38,9 @@ DEF SHOW EQU $15
 	const HS_ROUTE_2_ITEM_2                ; 1A X
 	const HS_ROUTE_4_ITEM                  ; 1B X
 	const HS_ROUTE_9_ITEM                  ; 1C X
+	const HS_ROUTE9_SURGE_HUBBY            ; whatever
 	const HS_ROUTE_12_SNORLAX              ; 1D
 	const HS_ROUTE_12_ITEM_1               ; 1E X
-	const HS_ROUTE_12_ITEM_2               ; 1F X
-	const HS_ROUTE_15_ITEM                 ; 20 X
 	const HS_ROUTE_16_SNORLAX              ; 21
 	const HS_ROUTE_22_RIVAL_1              ; 22
 	const HS_ROUTE_22_RIVAL_2              ; 23
@@ -186,6 +185,7 @@ DEF SHOW EQU $15
 	const HS_SILPH_CO_9F_1                 ; AE
 	const HS_SILPH_CO_9F_2                 ; AF
 	const HS_SILPH_CO_9F_3                 ; B0
+	const HS_SILPH_CO_9F_4                 ; whatever
 	const HS_SILPH_CO_10F_1                ; B1
 	const HS_SILPH_CO_10F_2                ; B2
 	const HS_SILPH_CO_10F_3                ; B3 XXX never (de)activated?
@@ -237,5 +237,4 @@ DEF SHOW EQU $15
 	const HS_SEAFOAM_ISLANDS_B4F_BOULDER_1 ; E1
 	const HS_SEAFOAM_ISLANDS_B4F_BOULDER_2 ; E2
 	const HS_ARTICUNO                      ; E3 X
-	const HS_ROUTE9_SURGE_HUBBY            ; E4
 DEF NUM_HS_OBJECTS EQU const_value

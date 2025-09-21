@@ -48,7 +48,6 @@ INCLUDE "text/SafariZoneSecretHouse.asm"
 INCLUDE "text/SafariZoneWestRestHouse.asm"
 INCLUDE "text/SafariZoneEastRestHouse.asm"
 INCLUDE "text/SafariZoneNorthRestHouse.asm"
-INCLUDE "text/CeruleanCaveB1F.asm"
 INCLUDE "text/VictoryRoad1F.asm"
 INCLUDE "text/LancesRoom.asm"
 INCLUDE "text/HallOfFame.asm"
@@ -57,6 +56,10 @@ INCLUDE "text/LoreleisRoom.asm"
 INCLUDE "text/BrunosRoom.asm"
 INCLUDE "text/AgathasRoom.asm"
 INCLUDE "text/RockTunnelB1F.asm"
+
+SECTION "Karp Text", ROMX
+
+INCLUDE "text/CeruleanCaveB1F.asm"
 
 
 SECTION "Text 3", ROMX

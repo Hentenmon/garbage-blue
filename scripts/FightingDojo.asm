@@ -68,7 +68,7 @@ FightingDojoKarateMasterPostBattleScript:
 	ldh [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
 .already_facing
-	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
+	ld a, D_UP | D_LEFT | D_DOWN | D_RIGHT
 	ld [wJoyIgnore], a
 	SetEventRange EVENT_BEAT_KARATE_MASTER, EVENT_BEAT_FIGHTING_DOJO_TRAINER_3
 	ld a, TEXT_FIGHTINGDOJO_KARATE_MASTER_I_WILL_GIVE_YOU_A_POKEMON
@@ -231,7 +231,7 @@ FightingDojoHitmonleePokeBallText:
 	call PrintText
 	jr .done
 .GetMon
-	ld a, MANKEY
+	ld a, MACHOKE
 	call DisplayPokedex
 	ld hl, .Text
 	call PrintText

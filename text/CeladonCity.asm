@@ -86,6 +86,14 @@ _CeladonCityRocket2Text::
 	line "ROCKET's way!"
 	done
 
+_CeladonCityRocket3Text::
+    text "No one enters"
+	line "the prize room"
+	cont "now!"
+
+	para "BOSSs orders!"
+	done
+
 _CeladonCityTrainerTips1Text::
 	text "TRAINER TIPS"
 

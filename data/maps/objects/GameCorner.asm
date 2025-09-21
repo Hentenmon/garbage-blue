@@ -10,6 +10,7 @@
 	const_export GAMECORNER_CLERK2
 	const_export GAMECORNER_GENTLEMAN
 	const_export GAMECORNER_ROCKET
+	const_export GAMECORNER_ROCKET2
 
 GameCorner_Object:
 	db $f ; border block

@@ -16,6 +16,7 @@ RocketHideoutB1F_Object:
 	warp_event 24, 19, ROCKET_HIDEOUT_ELEVATOR, 1
 	warp_event 21, 24, ROCKET_HIDEOUT_B2F, 4
 	warp_event 25, 19, ROCKET_HIDEOUT_ELEVATOR, 2
+	warp_event 26,  9,  GAME_CORNER, 3
 
 	def_bg_events
 

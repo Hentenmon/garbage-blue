@@ -30,7 +30,7 @@ Moves:
 	move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        60, FLYING,       100, 20
 	move WHIRLWIND,    SWITCH_AND_TELEPORT_EFFECT,   0, NORMAL,       100, 20
 	move FLY,          FLY_EFFECT,                  70, FLYING,       100, 15
-	move BIND,         TRAPPING_EFFECT,             15, NORMAL,       100, 20
+	move BIND,         TRAPPING_EFFECT,             15, NORMAL,        75, 10
 	move SLAM,         NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 15
 	move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        35, GRASS,        100, 10
 	move STOMP,        FLINCH_SIDE_EFFECT2,         65, NORMAL,       100, 15
@@ -45,8 +45,8 @@ Moves:
 	move HORN_DRILL,   OHKO_EFFECT,                  1, NORMAL,        30,  5
 	move TACKLE,       NO_ADDITIONAL_EFFECT,        35, NORMAL,       100, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,       85, NORMAL,       100, 10
-	move WRAP,         TRAPPING_EFFECT,             15, NORMAL,        85, 20
-	move TAKE_DOWN,    RECOIL_EFFECT,               90, NORMAL,       100, 20
+	move WRAP,         TRAPPING_EFFECT,             15, NORMAL,        85,  5
+	move TAKE_DOWN,    RECOIL_EFFECT,               90, NORMAL,        85, 20
 	move THRASH,       THRASH_PETAL_DANCE_EFFECT,   90, NORMAL,       100,  5
 	move DOUBLE_EDGE,  RECOIL_EFFECT,              100, NORMAL,       100, 15
 	move TAIL_WHIP,    DEFENSE_DOWN1_EFFECT,         0, NORMAL,       100, 10
@@ -93,15 +93,15 @@ Moves:
 	move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,   70, GRASS,        100,  5
 	move STRING_SHOT,  SPEED_DOWN1_EFFECT,           0, BUG,          100, 10
 	move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,        1, DRAGON,       100, 10
-	move FIRE_SPIN,    TRAPPING_EFFECT,             15, FIRE,          70, 15
+	move FIRE_SPIN,    TRAPPING_EFFECT,             15, FIRE,          70, 10
 	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 15
 	move THUNDERBOLT,  PARALYZE_SIDE_EFFECT1,       95, ELECTRIC,     100,  8
 	move THUNDER_WAVE, PARALYZE_EFFECT,              0, ELECTRIC,     100, 20
 	move THUNDER,      PARALYZE_SIDE_EFFECT1,      120, ELECTRIC,      70, 10
-	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,         100, 15
+	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,          70, 15
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100,  5
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,        30,  5
-	move DIG,          CHARGE_EFFECT,               60, GROUND,       100, 10
+	move DIG,          CHARGE_EFFECT,               60, GROUND,       100,  8
 	move TOXIC,        POISON_EFFECT,                0, POISON,        85, 10
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 15
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,    90, PSYCHIC_TYPE, 100,  2
@@ -138,7 +138,7 @@ Moves:
 	move BONE_CLUB,    FLINCH_SIDE_EFFECT1,         65, GROUND,        85, 20
 	move FIRE_BLAST,   BURN_SIDE_EFFECT2,          120, FIRE,          85,  5
 	move WATERFALL,    NO_ADDITIONAL_EFFECT,        80, WATER,        100, 10
-	move CLAMP,        TRAPPING_EFFECT,             35, WATER,         75, 10
+	move CLAMP,        TRAPPING_EFFECT,             35, WATER,         75,  5
 	move SWIFT,        SWIFT_EFFECT,                60, NORMAL,       100, 15
 	move SKULL_BASH,   CHARGE_EFFECT,              100, NORMAL,       100, 15
 	move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,       100, 15
@@ -175,5 +175,6 @@ Moves:
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        75, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 15
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,       100,  1
+	move ANCESTORPWR,  TWO_TO_FIVE_ATTACKS_EFFECT, 255, ANCESTOR,     100, 40
 	move STRUGGLE,     RECOIL_EFFECT,               50, BIRD,         100, 10
 	assert_table_length NUM_ATTACKS

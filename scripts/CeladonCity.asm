@@ -15,6 +15,7 @@ CeladonCity_TextPointers:
 	dw_const CeladonCityPoliwrathText,         TEXT_CELADONCITY_POLIWRATH
 	dw_const CeladonCityRocket1Text,           TEXT_CELADONCITY_ROCKET1
 	dw_const CeladonCityRocket2Text,           TEXT_CELADONCITY_ROCKET2
+	dw_const CeladonCityRocket3Text,           TEXT_CELADONCITY_ROCKET3
 	dw_const CeladonCityTrainerTips1Text,      TEXT_CELADONCITY_TRAINER_TIPS1
 	dw_const CeladonCitySignText,              TEXT_CELADONCITY_SIGN
 	dw_const PokeCenterSignText,               TEXT_CELADONCITY_POKECENTER_SIGN
@@ -98,6 +99,10 @@ CeladonCityRocket1Text:
 
 CeladonCityRocket2Text:
 	text_far _CeladonCityRocket2Text
+	text_end
+
+CeladonCityRocket3Text:
+	text_far _CeladonCityRocket3Text
 	text_end
 
 CeladonCityTrainerTips1Text:

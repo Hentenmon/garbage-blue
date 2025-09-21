@@ -1,6 +1,6 @@
 SeafoamIslandsB4FWildMons:
 	def_grass_wildmons 10 ; encounter rate
-	db 41, GASTLY
+	db 41, TANGELA
 	db 41, KRABBY
 	db 41, GRAVELER
 	db 41, GOLBAT

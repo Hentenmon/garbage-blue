@@ -165,6 +165,7 @@ AttackAnimationPointers:
 	dw SlashAnim
 	dw SubstituteAnim
 	dw StruggleAnim
+	dw AncestorPwrAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
 	dw EnemyFlashAnim
@@ -1141,6 +1142,11 @@ SubstituteAnim:
 	battle_anim SUBSTITUTE, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_0_BALL_POOF, 0, 8
 	battle_anim NO_MOVE, SE_SUBSTITUTE_MON
+	db -1 ; end
+
+AncestorPwrAnim:
+    battle_anim SPLASH, SE_BOUNCE_UP_AND_DOWN
+	battle_anim POUND, SUBANIM_0_STAR_TWICE, 0, 8
 	db -1 ; end
 
 BallTossAnim:

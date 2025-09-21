@@ -12,7 +12,7 @@ FuchsiaCity_TextPointers:
 	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_KANGASKHAN
 	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_SLOWPOKE
 	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_LAPRAS
-	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_FOSSIL
+	dw_const BoulderText,                    TEXT_FUCHSIACITY_BOULDER
 	dw_const FuchsiaCitySignText,            TEXT_FUCHSIACITY_SIGN1
 	dw_const FuchsiaCitySignText,            TEXT_FUCHSIACITY_SIGN2
 	dw_const FuchsiaCitySafariGameSignText,  TEXT_FUCHSIACITY_SAFARI_GAME_SIGN

@@ -36,9 +36,9 @@ CeladonMartRoofScript_GetDrinksInBag:
 	ret
 
 CeladonMartRoofDrinkList:
-	db FRESH_WATER
-	db SODA_POP
-	db LEMONADE
+	db NUGGET
+	db NUGGET
+	db NUGGET
 	db 0 ; end
 
 CeladonMartRoofScript_GiveDrinkToGirl:

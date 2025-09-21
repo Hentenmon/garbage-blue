@@ -8,7 +8,7 @@
 	const_export FUCHSIACITY_KANGASKHAN
 	const_export FUCHSIACITY_SLOWPOKE
 	const_export FUCHSIACITY_LAPRAS
-	const_export FUCHSIACITY_FOSSIL
+	const_export FUCHSIACITY_BOULDER
 
 FuchsiaCity_Object:
 	db $f ; border block
@@ -17,7 +17,7 @@ FuchsiaCity_Object:
 	warp_event  5, 13, FUCHSIA_MART, 1
 	warp_event 11, 27, FUCHSIA_BILLS_GRANDPAS_HOUSE, 1
 	warp_event 19, 27, FUCHSIA_POKECENTER, 1
-	warp_event 27, 27, WARDENS_HOUSE, 1
+	warp_event 16, 15, WARDENS_HOUSE, 1
 	warp_event 18,  3, SAFARI_ZONE_GATE, 1
 	warp_event  5, 27, FUCHSIA_GYM, 1
 	warp_event 22, 13, FUCHSIA_MEETING_ROOM, 1
@@ -50,6 +50,6 @@ FuchsiaCity_Object:
 	object_event 12,  6, SPRITE_MONSTER, WALK, LEFT_RIGHT, TEXT_FUCHSIACITY_KANGASKHAN
 	object_event 30, 12, SPRITE_MONSTER, WALK, LEFT_RIGHT, TEXT_FUCHSIACITY_SLOWPOKE
 	object_event  8, 17, SPRITE_SEEL, WALK, ANY_DIR, TEXT_FUCHSIACITY_LAPRAS
-	object_event  6,  5, SPRITE_FOSSIL, STAY, NONE, TEXT_FUCHSIACITY_FOSSIL
+	object_event  5, 28, SPRITE_BOULDER, STAY, BOULDER_MOVEMENT_BYTE_2, TEXT_FUCHSIACITY_BOULDER
 
 	def_warps_to FUCHSIA_CITY

@@ -440,6 +440,8 @@ GameCornerRocketText:
 	ld [wGameCornerCurScript], a
 	jp TextScriptEnd
 
+
+
 .ImGuardingThisPosterText:
 	text_far _GameCornerRocketImGuardingThisPosterText
 	text_end
@@ -451,7 +453,7 @@ GameCornerRocketText:
 GameCornerRocketAfterBattleText:
 	text_far _GameCornerRocketAfterBattleText
 	text_end
-
+	
 GameCornerPosterText:
 	text_asm
 	ld a, $1

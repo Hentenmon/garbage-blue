@@ -153,6 +153,9 @@ SilphCo9FNurseText:
 	call GBFadeInFromWhite
 	ld hl, .DontGiveUpText
 	call PrintText
+	ld a, HS_SILPH_CO_9F_4
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	jr .text_script_end
 .beat_giovanni
 	ld hl, .ThankYouText

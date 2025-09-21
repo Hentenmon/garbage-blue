@@ -17,17 +17,17 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
-	db EXEGGUTOR, 90
+	db DITTO, 65
 IF DEF(_DEBUG)
-	db MEW, 5
+	db HITMONCHAN, 65
 ELSE
 	db MEW, 20
 ENDC
-	db JOLTEON, 56
-	db DUGTRIO, 56
-	db ARTICUNO, 57
+	db SEAKING, 65
+	db IVYSAUR, 65
+	db PIKACHU, 65
 IF DEF(_DEBUG)
-	db PIKACHU, 5
+	db FLAREON, 65
 ENDC
 	db -1 ; end
 
@@ -47,7 +47,7 @@ IF DEF(_DEBUG)
 
 	call SetDebugNewGameParty
 
-	; Exeggutor gets four HM moves.
+	; Ditto gets four HM moves.
 	ld hl, wPartyMon1Moves
 	ld a, FLY
 	ld [hli], a
@@ -56,40 +56,116 @@ IF DEF(_DEBUG)
 	ld a, SURF
 	ld [hli], a
 	ld a, STRENGTH
-	ld [hl], a
+	ld [hli], a
 	ld hl, wPartyMon1PP
 	ld a, 15
 	ld [hli], a
-	ld a, 30
+	ld a, 10
 	ld [hli], a
 	ld a, 15
 	ld [hli], a
 	ld [hl], a
 
-	; Jolteon gets Thunderbolt.
-	ld hl, wPartyMon3Moves + 3
-	ld a, THUNDERBOLT
-	ld [hl], a
-	ld hl, wPartyMon3PP + 3
-	ld a, 15
-	ld [hl], a
-
-	; Articuno gets Fly.
-	ld hl, wPartyMon5Moves
-	ld a, FLY
-	ld [hl], a
-	ld hl, wPartyMon5PP
-	ld a, 15
-	ld [hl], a
-
-	; Pikachu gets Surf.
-	ld hl, wPartyMon6Moves + 2
-	ld a, SURF
-	ld [hl], a
-	ld hl, wPartyMon6PP + 2
-	ld a, 15
+	ld hl, wPartyMon2Moves
+	ld a, THUNDERPUNCH
+	ld [hli], a
+	ld a, ICE_PUNCH
+	ld [hli], a
+	ld a, SUBMISSION
+	ld [hli], a
+	ld a, MEGA_PUNCH
+	ld [hli], a
+	ld hl, wPartyMon1PP
+	ld a, 10
+	ld [hli], a
+	ld a, 10
+	ld [hli], a
+	ld a, 25
+	ld [hli], a
+	ld a, 10
+	ld [hli], a
 	ld [hl], a
 
+    ld hl, wPartyMon3Moves
+	ld a, WATERFALL
+	ld [hli], a
+	ld a, AGILITY
+	ld [hli], a
+	ld a, HORN_ATTACK
+	ld [hli], a
+	ld a, PECK
+	ld [hli], a
+	ld hl, wPartyMon1PP
+	ld a, 10
+	ld [hli], a
+	ld a, 2
+	ld [hli], a
+	ld a, 15
+	ld [hli], a
+	ld a, 25
+	ld [hli], a
+	ld [hl], a
+
+	ld hl, wPartyMon4Moves
+	ld a, RAZOR_LEAF
+	ld [hli], a
+	ld a, SLEEP_POWDER
+	ld [hli], a
+	ld a, GROWTH
+	ld [hli], a
+	ld a, TAKE_DOWN
+	ld [hli], a
+	ld hl, wPartyMon1PP
+	ld a, 10
+	ld [hli], a
+	ld a, 8
+	ld [hli], a
+	ld a, 1
+	ld [hli], a
+	ld a, 20
+	ld [hli], a
+	ld [hl], a
+
+    ld hl, wPartyMon5Moves
+	ld a, THUNDER
+	ld [hli], a
+	ld a, SWIFT
+	ld [hli], a
+	ld a, THUNDER_WAVE
+	ld [hli], a
+	ld a, QUICK_ATTACK
+	ld [hli], a
+	ld hl, wPartyMon1PP
+	ld a, 10
+	ld [hli], a
+	ld a, 15
+	ld [hli], a
+	ld a, 20
+	ld [hli], a
+	ld a, 15
+	ld [hli], a
+	ld [hl], a
+
+    ld hl, wPartyMon6Moves
+	ld a, FLAMETHROWER
+	ld [hli], a
+	ld a, FIRE_SPIN
+	ld [hli], a
+	ld a, TAKE_DOWN
+	ld [hli], a
+	ld a, TOXIC
+	ld [hli], a
+	ld hl, wPartyMon1PP
+	ld a, 8
+	ld [hli], a
+	ld a, 10
+	ld [hli], a
+	ld a, 20
+	ld [hli], a
+	ld a, 10
+	ld [hli], a
+	ld [hl], a
+	
 	; Get some debug items.
 	ld hl, wNumBagItems
 	ld de, DebugItemsList
@@ -146,6 +222,8 @@ DebugItemsList:
 	db CARD_KEY, 1
 	db S_S_TICKET, 1
 	db LIFT_KEY, 1
+	db POKE_FLUTE, 1
+	db POKE_DOLL, 99
 	db -1 ; end
 
 DebugUnusedList:
