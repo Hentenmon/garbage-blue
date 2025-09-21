@@ -149,12 +149,6 @@ _Route9Youngster2AfterBattleText::
 	line "bug #MON, you"
 	cont "bug me!"
 	done
-	
-_Route9SignText::
-	text "ROUTE 9"
-	line "CERULEAN CITY-"
-	cont "ROCK TUNNEL"
-	done
 
 _Route9SurgeHubbyText::
     text "Hi, could I ask"
@@ -170,4 +164,10 @@ _Route9SurgeHubbyText::
     cont "please?"
 	cont "It always"
 	cont "cheers him up."
+	done
+
+_Route9SignText::
+	text "ROUTE 9"
+	line "CERULEAN CITY-"
+	cont "ROCK TUNNEL"
 	done
