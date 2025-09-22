@@ -2,7 +2,7 @@
 ; they are texts
 
 ViridianMartClerkText::
-	script_mart MASTER_BALL, RARE_CANDY
+	script_mart POKE_BALL, RARE_CANDY
 
 PewterMartClerkText::
 	script_mart POKE_BALL, REPEL, RARE_CANDY
