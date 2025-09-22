@@ -43,6 +43,7 @@ TypeEffects:
 	db FIGHTING,     ICE,          SUPER_EFFECTIVE
 	db FIGHTING,     GHOST,        NO_EFFECT
 	db POISON,       GRASS,        SUPER_EFFECTIVE
+    db POISON,       BUG,          SUPER_EFFECTIVE
 	db POISON,       POISON,       NOT_VERY_EFFECTIVE
 	db POISON,       GROUND,       NOT_VERY_EFFECTIVE
 	db ICE,          FIRE,         NOT_VERY_EFFECTIVE
