@@ -1,7 +1,7 @@
 _SaffronGateGuardGeeImThirstyText::
 	text "I'm on guard duty."
-	line "Gee, I'm thirsty,"
-	cont "though!"
+	line "I need a X-Mas"
+	cont "present though!"
 
 	para "Oh wait there,"
 	line "the road's closed."
@@ -9,10 +9,10 @@ _SaffronGateGuardGeeImThirstyText::
 
 _SaffronGateGuardImParchedText::
 	text "Whoa, boy!"
-	line "I'm parched!"
+	line "I'm cooked!"
 	cont "..."
 	cont "Huh? I can have"
-	cont "this drink?"
+	cont "this doll?"
 	cont "Gee, thanks!@"
 	text_end
 
@@ -20,9 +20,9 @@ _SaffronGateGuardYouCanGoOnThroughText::
 	text_start
 
 	para "..."
-	line "Glug glug..."
+	line "Now my wife"
 	cont "..."
-	cont "Gulp..."
+	cont "won't scold me."
 	cont "If you want to go"
 	cont "to SAFFRON CITY..."
 	cont "..."
@@ -34,5 +34,5 @@ _SaffronGateGuardYouCanGoOnThroughText::
 
 _SaffronGateGuardThanksForTheDrinkText::
 	text "Hi, thanks for"
-	line "the cool drinks!"
+	line "the # DOLL!"
 	done
