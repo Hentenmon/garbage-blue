@@ -139,6 +139,15 @@ StartMenu_Pokemon::
 	ld hl, .cannotFlyHereText
 	call PrintText
 	jp .loop
+.canFly
+	call ChooseFlyDestination
+	ld a, [wStatusFlags6]
+	bit BIT_FLY_WARP, a
+	jp nz, .goBackToMap
+	call LoadFontTilePatterns
+	ld hl, wStatusFlags4
+	set BIT_UNKNOWN_4_1, [hl]
+	jp StartMenu_Pokemon
 .cut
 	bit BIT_CASCADEBADGE, a
 	jp z, .newBadgeRequired
