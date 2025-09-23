@@ -128,6 +128,17 @@ StartMenu_Pokemon::
 	dw .dig
 	dw .teleport
 	dw .softboiled
+.fly
+	bit BIT_EARTHBADGE, a
+	jp z, .newBadgeRequired
+	call CheckIfInOutsideMap
+	jr z, .canFly
+	ld a, [wWhichPokemon]
+	ld hl, wPartyMonNicks
+	call GetPartyMonName
+	ld hl, .cannotFlyHereText
+	call PrintText
+	jp .loop
 .cut
 	bit BIT_CASCADEBADGE, a
 	jp z, .newBadgeRequired
