@@ -49,14 +49,17 @@ SpecialTrainerMoves:
 	db 0
 
 	db RIVAL3, 1
+	db 1, 3, SKY_ATTACK
 	db 6, 3, BLIZZARD
 	db 0
 
 	db RIVAL3, 2
+	db 1, 3, SKY_ATTACK
 	db 6, 3, MEGA_DRAIN
 	db 0
 
 	db RIVAL3, 3
+	db 1, 3, SKY_ATTACK
 	db 6, 3, FIRE_BLAST
 	db 0
 
